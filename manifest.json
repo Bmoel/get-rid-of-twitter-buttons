@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+    "name": "Twitter Sidebar Button Hider",
+    "version": "1.0",
+    "description": "Get rid of dumb twitter buttons I don't use",
+    "content_scripts": [
+      {
+        "matches": ["https://x.com/home"],
+        "js": ["js/buttonHider.js"],
+        "run_at": "document_start"
+      }
+    ]
+  }
+  
