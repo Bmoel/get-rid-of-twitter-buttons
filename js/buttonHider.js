@@ -1,3 +1,4 @@
+let buttonsRemoved = 0;
 const BLACKLISTED_ARIA_LABELS = new Set([
     'grok',
     'lists',
@@ -8,11 +9,14 @@ const BLACKLISTED_ARIA_LABELS = new Set([
 ]);
 
 const observer = new MutationObserver(() => {
-    removeTheButtonsWithSwag();
+    if (buttonsRemoved < BLACKLISTED_ARIA_LABELS.size) {
+        removeTheButtonsWithSwag();
+    }
 });
 observer.observe(document, { childList: true, subtree: true });
 
 function removeTheButtonsWithSwag() {
+    console.log('button count', buttonsRemoved);
     const pageNavs = document.getElementsByTagName('nav');
     for (let i = 0; i < pageNavs.length; i++) {
         const navChild = pageNavs[i];
@@ -26,6 +30,7 @@ function removeTheButtonsWithSwag() {
             if (tagType.toLowerCase() === 'a') {
                 const childAriaLabel = subChild.ariaLabel;
                 if (childAriaLabel !== null && BLACKLISTED_ARIA_LABELS.has(childAriaLabel.toLowerCase())) {
+                    buttonsRemoved++;
                     subChild.remove();
                 }
             }
