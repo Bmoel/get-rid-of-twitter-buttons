@@ -11,8 +11,10 @@ Gets rid of the following buttons:
 In order top use, you can clone this code and use it locally.  
 ### Firefox
 For Firefox, you can do one of the following
-- Download the most recent xpi file in [Releases](https://github.com/Bmoel/get-rid-of-twitter-buttons/releases/), and then load it in your Firefox Addons settings  
-OR
+- Download the most recent xpi file in [Releases](https://github.com/Bmoel/get-rid-of-twitter-buttons/releases/)
+  - By clicking on the xpi link, Firefox should give you a popup in the top right to confirm the installation
+
+Or if you would rather not use the xpi you can:
 - Pull down the code and sign it yourself, can follow directions here: https://stackoverflow.com/questions/34608873/how-to-sign-a-firefox-extension
 
 ### Chrome
