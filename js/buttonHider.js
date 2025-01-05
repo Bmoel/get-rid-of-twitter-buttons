@@ -16,7 +16,6 @@ const observer = new MutationObserver(() => {
 observer.observe(document, { childList: true, subtree: true });
 
 function removeTheButtonsWithSwag() {
-    console.log('button count', buttonsRemoved);
     const pageNavs = document.getElementsByTagName('nav');
     for (let i = 0; i < pageNavs.length; i++) {
         const navChild = pageNavs[i];
