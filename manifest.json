@@ -3,6 +3,11 @@
     "name": "Twitter Sidebar Button Hider",
     "version": "1.0.4",
     "description": "Get rid of dumb twitter buttons I don't use",
+    "browser_specific_settings": {
+      "gecko": {
+        "id": "{b9eb6480-10dc-410d-808f-49344f56aeb3}"
+      }
+    },
     "content_scripts": [
       {
         "matches": ["https://x.com/*"],
