@@ -5,7 +5,10 @@
     "description": "Get rid of dumb twitter buttons I don't use",
     "browser_specific_settings": {
       "gecko": {
-        "id": "{b9eb6480-10dc-410d-808f-49344f56aeb3}"
+        "id": "twitter-sidebar-hider@example.com"
+      },
+      "gecko_android": {
+        "id": "twitter-sidebar-hider@example.com"
       }
     },
     "content_scripts": [
