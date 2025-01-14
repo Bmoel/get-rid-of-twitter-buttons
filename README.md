@@ -11,7 +11,7 @@ Gets rid of the following buttons:
 In order top use, you can clone this code and use it locally.  
 ### Firefox
 For Firefox, you can do one of the following
-- MOA Download link: https://addons.mozilla.org/…/get-rid-of-twitter-buttons
+- MOA Download link: https://addons.mozilla.org/en-US/firefox/addon/twitter-sidebar-button-hider/
   
 Or if you would rather sign the code yourself
 - https://stackoverflow.com/questions/34608873/how-to-sign-a-firefox-extension
