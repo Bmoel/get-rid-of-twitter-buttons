@@ -7,6 +7,7 @@ Gets rid of the following buttons:
 - Communities
 - Premium
 - Verified Orgs
+- Business
 ## Usability
 In order top use, you can clone this code and use it locally.  
 ### Firefox
