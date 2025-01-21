@@ -6,6 +6,7 @@ const BLACKLISTED_ARIA_LABELS = new Set([
     'communities',
     'premium',
     'verified orgs',
+    'business',
 ]);
 
 const observer = new MutationObserver(() => {
